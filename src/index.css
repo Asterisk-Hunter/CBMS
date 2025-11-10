@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border-dark;
+  }
+  
+  body {
+    @apply bg-background-dark text-white;
+  }
+  
+  /* Remove any white backgrounds */
+  html,
+  body,
+  #root {
+    @apply bg-background-dark;
+  }
+  
+  /* Ensure all inputs and selects have dark backgrounds */
+  input,
+  select,
+  textarea {
+    @apply bg-background-dark text-white;
+  }
+  
+  /* Style scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background-dark;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-lg;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+}
